@@ -9,6 +9,8 @@ interface Route {
 // Implementing Lazy loads here --->
 
 const Lazy1 = lazy(() => import("../01-lazyload/pages/LazyPage1"));
+const Lazy2 = lazy(() => import("../01-lazyload/pages/LazyPage2"));
+const Lazy3 = lazy(() => import("../01-lazyload/pages/LazyPage3"));
 
 // Important to add the Route array to be able to used their Types
 export const routes: Route[] = [
