@@ -39,7 +39,11 @@ export const Navigation = () => {
             renders the first one that matches the current URL. */}
           <Routes>
             {routes.map((route) => (
-              <Route path={route.path} element={<route.Component />}></Route>
+              <Route
+                key={route.to}
+                path={route.path}
+                element={<route.Component />}
+              ></Route>
             ))}
 
             {/* Here The router will render to lazy1 route */}
