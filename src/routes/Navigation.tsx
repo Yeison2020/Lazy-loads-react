@@ -40,7 +40,7 @@ export const Navigation = () => {
           ))}
 
           {/* Here The router will render to lazy1 route */}
-          <Route path="/*" element={<Navigate to="lazy1" />} />
+          <Route path="/*" element={<Navigate to={routes[0].to} />} />
         </Routes>
       </div>
     </Router>
