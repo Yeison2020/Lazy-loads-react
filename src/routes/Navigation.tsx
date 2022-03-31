@@ -4,11 +4,9 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
-import LazyPage1 from "../01-lazyload/pages/LazyPage1";
-import LazyPage2 from "../01-lazyload/pages/LazyPage2";
-import LazyPage3 from "../01-lazyload/pages/LazyPage3";
-
 import logo from "../logo.svg";
+
+import { LazyPage1, LazyPage2, LazyPage3 } from "../01-lazyload/pages";
 
 export const Navigation = () => {
   return (
