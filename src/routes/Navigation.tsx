@@ -3,6 +3,7 @@ import {
   Routes,
   Route,
   NavLink,
+  Navigate,
 } from "react-router-dom";
 import logo from "../logo.svg";
 
@@ -57,6 +58,8 @@ export const Navigation = () => {
           <Route path="/lazy1" element={<LazyPage1 />}></Route>
           <Route path="/lazy2" element={<LazyPage2 />}></Route>
           <Route path="/lazy3" element={<LazyPage3 />}></Route>
+          {/* Here The router will render to lazy1 route */}
+          <Route path="/*" element={<Navigate to="lazy1" />} />
         </Routes>
       </div>
     </Router>
