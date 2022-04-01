@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink, Routes, Route, Navigate } from "react-router-dom";
 import { LazyPage1, LazyPage2, LazyPage3 } from "../pages";
+
+// Este Componente es el Modulo que cargaria todo lo demas aqui
 const Lazylayout = () => {
   return (
     <div>
