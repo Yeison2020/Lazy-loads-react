@@ -16,27 +16,21 @@ interface Route {
 // Why adding the comment there this will change the name of the chunck
 
 const Lazylayout = lazy(() => import(`../01-lazyload/layout/Lazylayout`));
-const Lazy2 = lazy(() => import(`../01-lazyload/pages/LazyPage2`));
-const Lazy3 = lazy(() => import(`../01-lazyload/pages/LazyPage3`));
+const NoLazypage = lazy(() => import(`../01-lazyload/pages/NoLazy`));
+// const Lazy3 = lazy(() => import(`../01-lazyload/pages/LazyPage3`));
 
 // Important to add the Route array to be able to used their Types
 export const routes: Route[] = [
   {
-    to: "lazy1",
-    path: "lazy1",
+    to: "/lazyload",
+    path: "/lazyload/*",
     Component: Lazylayout,
     name: "Lazy Layout Component",
   },
   {
-    to: "lazy2",
-    path: "lazy2",
-    Component: Lazy2,
-    name: "Lazy Page 2",
-  },
-  {
-    to: "lazy3",
-    path: "lazy3",
-    Component: Lazy3,
-    name: "Lazy Page 3",
+    to: "noLazy",
+    path: "noLazy",
+    Component: NoLazypage,
+    name: "No Lazy Page Component",
   },
 ];
