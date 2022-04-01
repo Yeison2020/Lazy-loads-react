@@ -23,6 +23,8 @@ const NoLazypage = lazy(() => import(`../01-lazyload/pages/NoLazy`));
 export const routes: Route[] = [
   {
     to: "/lazyload",
+
+    // Those nested component here Will use this path and add their own path inside of the Lazy layout Component
     path: "/lazyload/*",
     Component: Lazylayout,
     name: "Lazy Layout Component",
